@@ -27,7 +27,7 @@ Pila<Tipo>::Pila(int tam)
 }
 
 template<typename Tipo>
-Pila<Tipo>::~Pila
+Pila<Tipo>::~Pila()
 {
     delete [ ] arreglo;
 }
@@ -54,6 +54,6 @@ int main()
     
     int x=miPila.Pop();
     std::cout<<x<<std::endl;
-    int x=miPila.Pop();
+    x=miPila.Pop();
     std::cout<<x<<std::endl;
 }
